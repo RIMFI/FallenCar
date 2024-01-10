@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Главная</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="booking/css/booking.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/camera.js"></script>
+		<script src="js/jquery.mobile.customized.min.js"></script>
+		<!--<![endif]-->
+		<script src="booking/js/booking.js"></script>
+		<script>
+			$(document).ready(function(){
+				jQuery('#camera_wrap').camera({
+					loader: false,
+					pagination: false ,
+					minHeight: '444',
+					thumbnails: false,
+					height: '28.28125%',
+					caption: true,
+					navigation: true,
+					fx: 'mosaic'
+				});
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+	</head>
+	<body class="page1" id="top">
+		<div class="main">
+			<header>
+				<div class="menu_block ">
+					<div class="container_12">
+						<div class="grid_12">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+								<ul class="sf-menu">
+									<li class="current"><a href="index.html">Главная</a></li>
+									<li><a href="index-1.html">О нас</a></li>
+									<li><a href="index-2.html">Автомобили</a></li>
+									<li><a href="index-3.html">Услуги</a></li>
+									<li><a href="index-4.html">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="container_12">
+					<div class="grid_12">
+						<h1>
+							<a href="index.html">
+								<img src="images/logo.png">
+							</a>
+						</h1>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</header>
+			<div class="slider_wrapper ">
+				<div id="camera_wrap" class="">
+					<div data-src="images/slide.jpg" ></div>
+					<div data-src="images/slide1.jpg" ></div>
+					<div data-src="images/slide2.jpg"></div>
+				</div>
+			</div>
+			<div class="container_12">
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheights">
+							<div class="banner_title">
+								<img src="images/icon1.png">
+								<div class="extra_wrapper">Быстро,
+									<div class="color1">Доступно</div>
+								</div>
+							</div>
+							<p class="ad_block">Свобода — когда своей машины нет. А каршеринг есть.</p>
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheights">
+							<div class="banner_title">
+								<img src="images/icon2.png">
+								<div class="extra_wrapper">Лучшие
+									<div class="color1">Цены</div>
+								</div>
+							</div>
+							<p class="ad_block">Наши цены никогда не кусаются.</p>
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				<div class="grid_4">
+					<div class="banner">
+						<div class="maxheights">
+							<div class="banner_title">
+								<img src="images/icon3.png">
+								<div class="extra_wrapper">Куда
+									<div class="color1">Угодно</div>
+								</div>
+							</div>
+							<p class="ad_block">Мы всегда доверяем клиентам и поэтому расширяем границы.</p>
+							<a href="#" class="fa fa-share-square"></a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="c_phone">
+				<div class="container_12">
+					<div class="grid_12">
+						<div class="fa fa-phone"></div><a href="tel:+79775464845">+7 977 546 48 45</a>
+						<span>Звони прямо сейчас!</span>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="content"><div class="ic"></div>
+				<div class="container_12">
+					<div class="grid_5">
+						<h3>Бронируйте заранее</h3>
+						<form id="bookingForm">
+							<div class="fl1">
+								<div class="tmInput">
+									<input name="Name" placeHolder="Имя:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+								</div>
+								<div class="tmInput">
+									<input name="From" placeHolder="Откуда:" type="text" data-constraints="@NotEmpty @Required ">
+								</div>
+							</div>
+							<div class="fl1">
+								<div class="tmInput">
+									<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+								</div>
+								<div class="tmInput mr0">
+									<input name="To" placeHolder="Куда:" type="text" data-constraints="@NotEmpty @Required">
+								</div>
+							</div>
+							<div class="clear"></div>
+							<strong>Время</strong>
+							<div class="tmInput">
+								<input name="Time" placeHolder="" type="text" data-constraints="@NotEmpty @Required">
+							</div>
+							<div class="clear"></div>
+							<strong>Дата</strong>
+							<label class="tmDatepicker">
+								<input type="text" name="Date"	placeHolder='12/20/2023' data-constraints="@NotEmpty @Required @Date">
+							</label>
+							<div class="clear"></div>
+							<div class="tmRadio">
+								<p>Автомобиль</p>
+								<input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
+								<span>Эконом</span>
+								<input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+								<span>Комфорт</span>
+								<input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
+								<span>Люкс</span>
+							</div>
+							<div class="clear"></div>
+							<div class="clear"></div>
+							<div class="tmTextarea">
+								<textarea name="Message" placeHolder="Доп.информация" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
+							</div>
+							<a href="#" class="btn" data-type="submit">Отправить</a>
+						</form>
+					</div>
+					<div class="grid_6 prefix_1">
+						<a href="index2.html" class="type"><img src="images/page1_img1.jpg" alt=""><span class="type_caption">Эконом</span></a>
+						<a href="index2.html" class="type"><img src="images/page1_img2.jpg" alt=""><span class="type_caption">Комфорт</span></a>
+						<a href="index2.html" class="type"><img src="images/page1_img3.jpg" alt=""><span class="type_caption">Люкс</span></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="f_phone"><span>Позвонить нам:</span> +7 977 546 48 45</div>
+					<div class="copy">
+						<div class="st1">
+						<div class="brand">Fallen<span class="color1">C</span>ar </div><br>
+						&copy; 2023	| <a href="#">Privacy Policy</a><br><br>
+						<p>Российская Федерация, город Москва</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div></div>
+		</footer>
+		<script>
+			$(function (){
+				$('#bookingForm').bookingForm({
+					ownerEmail: '#'
+				});
+			})
+			$(function() {
+				$('#bookingForm input, #bookingForm textarea').placeholder();
+			});
+		</script>
+	</body>
+</html>
